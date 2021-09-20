@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Form</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .heross{
+            vertical-align: middle;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Example of HTML Form.</h1>
+    <form>
+        <label for="fname">First name</label>
+        <!-- Here if we give value in the input element then it will preloaded the value in website. for suppose if we give the value as Dhiman(in the first input element
+            ) it will preload the given value in the text box. -->
+        <input type="text" id="fname" name="First Name" value=""><br><br>
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="Last Name" value=""><br><br>
+        <input type="submit" value="submit">
+        <!--With button tag we can use <i>, <strong>, <b>, <br>, <img> tag-->
+        <button type="button"><strong>Click me</strong></button>
+        <!-- But creating a button with input tag we can use above all tag.-->
+        <input type="button" value="button">
+        <!--color will add a color picker-->
+        <input type="color" name="colorpicker " value="">
+        <br><br>
+        <!-- Checkboxes are used to let a user select one or more options of a limited number of choices.-->
+        <label> Do you wanna join the telegram group</label>
+        <input type="checkbox" id="checkbox1" name="selectcheckbox">
+        <input type="submit" value="submit">
+        
+        <br><br>
+        <div class="heross">
+        <label>Who is your favourite hero</label><br>
+        <input type="checkbox" id="marvel" name="H-name" value="heros">
+        <label for="marvel">Iron man</label><br>
+        <input type="checkbox" id="DC" name="H-name" value="heros">
+        <label for="DC">Batman</label><br>
+        <input type="checkbox" id="Indian" name="H-name" value="heros">
+        <label for="Indian">Krish</label><br><br>
+        <input type="submit" value="submit">
+    </div>
+    <!-- date attribute is use to show the date.-->
+        <h1> date and datetime-local attribute example</h1>
+        <input type="date" id="start" name="selectdate" min="2018-01-01" max="2018-12-31">
+        <input type="submit" value="submit">
+
+        <br><br>
+        <!-- With the help of datatime-local attribute we can show the date and time together.-->
+        <p> Please enter the data and time</p>
+        <input type="datetime-local" id="selectdatetime" name="day" >
+        <input type="submit" value="submit">
+
+       <h1>Example of email attribute</h1>
+       <label>Please enter your email id:</label>
+       <br><br>
+       <input type="email" id="emailid" name="gmail">
+       <input type="submit" value="submit">
+       <h1>Example of file attribute</h1>
+       <input type="file" id="avatar" name="avater">
+       <input type="submit" value="submit">
+      <h1> Example of image attribute</h1>
+      <input type="image" src="images/Dhiman.jpg" alt="Picture of me" width="50" height="80">
+
+      <!-- hidden attribute hide the data and let developer include data that can't be modifie by user-->
+
+    <h1> Example of hidden attribute</h1>
+    <label for="firstname">First Name</label>
+    <input type="text" id="firstname" name="First name">
+    <input type="hidden" id="custID" name="CustName"  value="554">
+    <br><br>
+    <input type="submit" value="submit"> <br><br>
+
+<h1>Example of month attribute</h1>
+<!-- month attribute will let you pic the specific month-->
+<input type="month" id="month12" name="anymonth">
+<input type="submit" value="submit"><br><br>
+
+<h1>Example of number attribute</h1>
+<!-- Number attribute let you pick a number-->
+<input type="number" name="random" value="5">
+<input type="submit" value="submit"><br><br>
+<h1>password attribute</h1>
+<label for="pwd">Enter a password</label>
+<!--password attribute define a password field.-->
+<input type="password" id="pwd" name="passcode" maxlength="16">
+<input type="submit" value="submit"><br><br>
+<!--radio attribute will let you choose from a range of option.-->
+<h1> example of radio attribute</h1>
+<p> what is your favourite fruit?</p>
+<label for="fruit">Mango</label>
+<input type="radio" id="fruit" name="fruit1">
+<br><br>
+<label for="fruit">Bananna</label>
+<input type="radio" id="fruit22" name="fruit2"> <br><br>
+<label for="fruit">Pinapple</label>
+<input type="radio" id="fruit23" name="fruit3"> <br><br>
+<input type="submit" value="submit">
+
+<h1>Example of range attribute</h1>
+<!-- Range attribute will let yopu choose a numeric value, which must be no less then given value.-->
+<p> Audio settings</p>
+<label for="audio_player">DVD player</label>
+<input type="range" id="audio_player" name="jbl" value="80" min="0" max="100">
+<br>
+<!--search attribute let you search in the webpage.-->
+<h1>Example of search attribute</h1>
+<label for="search_here">search for the relevant document</label> <br><br>
+<input type="search" id="search_here" name="w" value="">
+<button>search</button>
+<!-- tell attribute define a field for entering a phone number.-->
+<h1>Example of tel attribute</h1>
+<label for="tellno">phone number</label>
+<input type="tel" id="tellno" name="gg" value="" placeholder="123-543-76547" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="10" >
+<input type="submit" value="submit">
+<!-- time attribute let you select the time.-->
+<h1>Example of time attribute</h1>
+<label>Please enter the time:</label>
+<input type="time" name="ff" value="">
+<input type="submit" value="sumbit">
+<!--week attribute will tell you the specific of that day week with the current year.-->
+<h1> Example of week attribute</h1>
+<label> please select a date:</label>
+<input type="week" id="week" name="weekname" value="">
+<input type="submit" value="submit">
+<h1>Example of url attribute</h1>
+ <!--url attribute is use to enter and edit an url-->
+ <p>enter the url</p>
+ <label for="url33">Enter the url:</label>
+ <input type="url" id="url33" name="urlno1" value="https://www.apple.com/">
+ <input type="submit" value="submit">
+
+    </form>
+</body>
+
+</html>
