@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>Example of form tag</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Example of textarea tag</h1>
+        <!--<textarea> tag define a multi line text input control.-->
+        <label for="writehere">What's on your mind? -</label><br>
+        <textarea id="writehere" name="text22" rows="6" cols="25" required></textarea><br>
+        <input type="submit" value="submit">
+
+        <!--<button> tag define a clickable button-->
+        <h2>Example of button tag</h2>
+        <button type="submit">click me</button>
+        <h2>button using js.</h2>
+        <button type="button" onclick="alert('hi')">click me</button><br><br>
+
+        <!--<select tag> is use to create a drop-down list, <option> tag define an option in the select list.
+    <optgroup> tag is used to group the related option in a <select> element.-->
+        <h2>Example of select, option and optgroup tag</h2>
+        <fieldset>
+            <!--<fieldset> tag is used to group, related elements in a form. mainly it will draw a box around the related elements.-->
+            <legend>Any car you like</legend>
+            <!--<legend> tag define a caption for the <fieldset> tag.-->
+            <label for="cars">choose a car:</label>
+            <select name="4 wheeler" id="cars">
+                <optgroup label="german cars">
+                    <option value="volvo">volvo</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="marcedes">marcedes</option>
+                </optgroup>
+                <optgroup label="japanese cars">
+                    <option value="Toyata prius">Toyata prius</option>
+                    <option value="Nissian">Nissian</option>
+                    <option value="Mazda">Mazda</option>
+                </optgroup>
+            </select><br><br>
+            <button name="submit">submit</button>
+        </fieldset>
+        <!--<datalist> tag specifies a list of pre-defined option for an <input> element-->
+        <h2>Example of datalist tag</h2>
+        <label for="browser">Choose your fav browser</label>
+        <input list="browsers" name="favbrowser" id="browser">
+        <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="chrome"></option>
+            <option value="opera"></option>
+            <option value="firefox"></option>
+        </datalist><br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
