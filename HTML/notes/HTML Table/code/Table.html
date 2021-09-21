@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-<meta name="viewport" content="width=device-witdth, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta charset="utf-8">
-<title>My first html table</title>
-<!--using css we can style our table more beautifully. for css visit the css folder.-->
-<style>
-   table.dhimani, table.dhimani th, table.dhimani td{
-     border: 1px solid black;
-     border-collapse: collapse;
-     background-color: cadetblue;
-    }
-    table.dhimani{
-        width: 100%;
-    }
-    table,td,th{
-        border: 1px solid black;
-        border-collapse: collapse;
 
-    }
-   
-    table.geeti th:nth-child(odd){
-        background-color: greenyellow;
-    }
-     
-    table.geeti th:nth-child(even){
-        background-color: greenyellow;
-    }
-
-    table.geeti, table.geeti th, table.geeti td{
-        border: 1px solid rgb(13, 226, 137);
-        border-radius: 10px;
-        padding: 15px;
-    }
-    table.geeti{
-        width: 100%;
-    }
-    
-table.geeti tr:nth-child(even)
-        {
-background-color: green;
+<head>
+    <meta name="viewport" content="width=device-witdth, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>My first html table</title>
+    <!--using css we can style our table more beautifully. for css visit the css folder.-->
+    <style>
+        table.dhimani,
+        table.dhimani th,
+        table.dhimani td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: cadetblue;
         }
-   table.chris tr:hover{
-       background-color: olivedrab;   
-   }
-   table.chris th{
-       border: 1px solid greenyellow;
-   }
-   table.chris td{
-       border-bottom: rgb(241, 14, 14);
-   }
-</style>
+
+        table.dhimani {
+            width: 100%;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+
+        table.geeti th:nth-child(odd) {
+            background-color: greenyellow;
+        }
+
+        table.geeti th:nth-child(even) {
+            background-color: greenyellow;
+        }
+
+        table.geeti,
+        table.geeti th,
+        table.geeti td {
+            border: 1px solid rgb(13, 226, 137);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        table.geeti {
+            width: 100%;
+        }
+
+        table.geeti tr:nth-child(even) {
+            background-color: green;
+        }
+
+        table.chris tr:hover {
+            background-color: olivedrab;
+        }
+
+        table.chris th {
+            border: 1px solid greenyellow;
+        }
+
+        table.chris td {
+            border-bottom: rgb(241, 14, 14);
+        }
+    </style>
 </head>
+
 <body>
     <h1>Example of html table</h1>
     <!--html <table> tag is use for creating a table. it consist with table row(<tr>) and table data (<td>)
@@ -106,304 +119,301 @@ background-color: green;
         </tbody>
     </table>
 
-<h1> Use of <code> caption</code> tag</h1>
-<!--<caption> tag will give a caption of the table.-->
-<table>
-    <caption> Student list</caption>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>course</th>
-            <th>Duration</th>
-            <th>year of passing out</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Dhiman</td>
-            <td>MCA</td>
-            <td>2 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>chris</td>
-            <td>B-tech</td>
-            <td>4 years</td>
-            <td>2024</td>
-        </tr>
-        <tr>
-            <td>Gunveet</td>
-            <td>BCA</td>
-            <td>3 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>Geet</td>
-            <td>MCA</td>
-            <td>2 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>morgan</td>
-            <td>MBA</td>
-            <td>2 years</td>
-            <td>2023</td>
-        </tr>
+    <h1> Use of <code> caption</code> tag</h1>
+    <!--<caption> tag will give a caption of the table.-->
+    <table>
+        <caption> Student list</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>course</th>
+                <th>Duration</th>
+                <th>year of passing out</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dhiman</td>
+                <td>MCA</td>
+                <td>2 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>chris</td>
+                <td>B-tech</td>
+                <td>4 years</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Gunveet</td>
+                <td>BCA</td>
+                <td>3 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>Geet</td>
+                <td>MCA</td>
+                <td>2 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>morgan</td>
+                <td>MBA</td>
+                <td>2 years</td>
+                <td>2023</td>
+            </tr>
         </tbody>
         <tfoot>
-        <tr>
-            <td>Alexzendra</td>
-            <td>Bio-tech</td>
-            <td>4 years</td>
-            <td>2024</td>
-        </tr>
-    </tfoot>
-</table>
-<h1> Use of <code> colgroup </code> tag</h1>
-<!--<colgroup> tag is use to apply the style to the entire coloum. under the <colgroup> tag we use <col span=""> tag specify the number of column a column group should span.-->
-<table>
-    <caption> Student list</caption>
-    <colgroup>
-        <col span="4" style="background-color: azure">
+            <tr>
+                <td>Alexzendra</td>
+                <td>Bio-tech</td>
+                <td>4 years</td>
+                <td>2024</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h1> Use of <code> colgroup </code> tag</h1>
+    <!--<colgroup> tag is use to apply the style to the entire coloum. under the <colgroup> tag we use <col span=""> tag specify the number of column a column group should span.-->
+    <table>
+        <caption> Student list</caption>
+        <colgroup>
+            <col span="4" style="background-color: azure">
         </colgroup>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>course</th>
-            <th>Duration</th>
-            <th>year of passing out</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Dhiman</td>
-            <td>MCA</td>
-            <td>2 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>chris</td>
-            <td>B-tech</td>
-            <td>4 years</td>
-            <td>2024</td>
-        </tr>
-        <tr>
-            <td>Gunveet</td>
-            <td>BCA</td>
-            <td>3 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>Geet</td>
-            <td>MCA</td>
-            <td>2 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>morgan</td>
-            <td>MBA</td>
-            <td>2 years</td>
-            <td>2023</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>course</th>
+                <th>Duration</th>
+                <th>year of passing out</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dhiman</td>
+                <td>MCA</td>
+                <td>2 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>chris</td>
+                <td>B-tech</td>
+                <td>4 years</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Gunveet</td>
+                <td>BCA</td>
+                <td>3 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>Geet</td>
+                <td>MCA</td>
+                <td>2 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>morgan</td>
+                <td>MBA</td>
+                <td>2 years</td>
+                <td>2023</td>
+            </tr>
         </tbody>
         <tfoot>
-        <tr>
-            <td>Alexzendra</td>
-            <td>Bio-tech</td>
-            <td>4 years</td>
-            <td>2024</td>
-        </tr>
-    </tfoot>
-</table>
-<h1> Example of HTML table border</h1>
-<table class="dhimani">
-    <caption> Student list</caption>
-    <colgroup>
-        <col span="4" style="background-color: azure">
+            <tr>
+                <td>Alexzendra</td>
+                <td>Bio-tech</td>
+                <td>4 years</td>
+                <td>2024</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h1> Example of HTML table border</h1>
+    <table class="dhimani">
+        <caption> Student list</caption>
+        <colgroup>
+            <col span="4" style="background-color: azure">
         </colgroup>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>course</th>
-            <th>Duration</th>
-            <th>year of passing out</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Dhiman</td>
-            <td>MCA</td>
-            <td>2 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>chris</td>
-            <td>B-tech</td>
-            <td>4 years</td>
-            <td>2024</td>
-        </tr>
-        <tr>
-            <td>Gunveet</td>
-            <td>BCA</td>
-            <td>3 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>Geet</td>
-            <td>MCA</td>
-            <td>2 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>morgan</td>
-            <td>MBA</td>
-            <td>2 years</td>
-            <td>2023</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>course</th>
+                <th>Duration</th>
+                <th>year of passing out</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dhiman</td>
+                <td>MCA</td>
+                <td>2 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>chris</td>
+                <td>B-tech</td>
+                <td>4 years</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Gunveet</td>
+                <td>BCA</td>
+                <td>3 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>Geet</td>
+                <td>MCA</td>
+                <td>2 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>morgan</td>
+                <td>MBA</td>
+                <td>2 years</td>
+                <td>2023</td>
+            </tr>
         </tbody>
         <tfoot>
-        <tr>
-            <td>Alexzendra</td>
-            <td>Bio-tech</td>
-            <td>4 years</td>
-            <td>2024</td>
-        </tr>
-    </tfoot>
-</table>
+            <tr>
+                <td>Alexzendra</td>
+                <td>Bio-tech</td>
+                <td>4 years</td>
+                <td>2024</td>
+            </tr>
+        </tfoot>
+    </table>
 
-<h1> Example of rounded border table, padding & spacing, rowspan and colspan</h1>
-<!--To use rounded border on a table use border-radius property.-->
-<!--To change the witdth we use style attribute under the table tag or we can specify at css.-->
-<!--Table padding will adjust the padding inside the cell, and also the space between the cells.-->
-<!-- To style a table like a zibra stripes use the: nth child(even/odd) selector.-->
-<table class="geeti" >
-    <caption> Student list</caption>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <!-- To make cell span over multiple colums, we use colspan attribute.-->
-            <th colspan="2">course</th>
-            <th>Duration</th>
-            <!--To make a cell span over multiple rows, we use rowspan attribute.-->
-            <th>year of passing out</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Dhiman</td>
-            <td>MCA</td>
-            <td>M-tech</td>
-            <td>2 years</td>
-            <td>2022</td>
+    <h1> Example of rounded border table, padding & spacing, rowspan and colspan</h1>
+    <!--To use rounded border on a table use border-radius property.-->
+    <!--To change the witdth we use style attribute under the table tag or we can specify at css.-->
+    <!--Table padding will adjust the padding inside the cell, and also the space between the cells.-->
+    <!-- To style a table like a zibra stripes use the: nth child(even/odd) selector.-->
+    <table class="geeti">
+        <caption> Student list</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <!-- To make cell span over multiple colums, we use colspan attribute.-->
+                <th colspan="2">course</th>
+                <th>Duration</th>
+                <!--To make a cell span over multiple rows, we use rowspan attribute.-->
+                <th>year of passing out</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dhiman</td>
+                <td>MCA</td>
+                <td>M-tech</td>
+                <td>2 years</td>
+                <td>2022</td>
 
-        </tr>
-        <tr>
-            <td>chris</td>
-            <td>B-tech</td>
-            <td>M-tech</td>
-            <td>4 years</td>
-            <td>2024</td>
-        </tr>
-        <tr>
-            <td>Gunveet</td>
-            <td>BCA</td>
-            <td>MCA</td>
-            <td>3 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>Geet</td>
-            <td>M-tech</td>
-            <td>PHD</td>
-            <td>2 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>morgan</td>
-            <td>MBA</td>
-            <td>M-tech</td>
-            <td>2 years</td>
-            <td>2023</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td>Alexzendra</td>
-            <td>Bio-tech</td>
-            <td>MSC</td>
-            <td>4 years</td>
-            <td>2024</td>
-        </tr>
-    </tfoot>
-</table>
+            </tr>
+            <tr>
+                <td>chris</td>
+                <td>B-tech</td>
+                <td>M-tech</td>
+                <td>4 years</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Gunveet</td>
+                <td>BCA</td>
+                <td>MCA</td>
+                <td>3 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>Geet</td>
+                <td>M-tech</td>
+                <td>PHD</td>
+                <td>2 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>morgan</td>
+                <td>MBA</td>
+                <td>M-tech</td>
+                <td>2 years</td>
+                <td>2023</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Alexzendra</td>
+                <td>Bio-tech</td>
+                <td>MSC</td>
+                <td>4 years</td>
+                <td>2024</td>
+            </tr>
+        </tfoot>
+    </table>
 
-<h1> use of rowspan attribute</h1>
-<table>
-    <tr>
+    <h1> use of rowspan attribute</h1>
+    <table>
+        <tr>
             <th rowspan="2">For special course</th>
             <td>2 years</td>
-       </tr> 
+        </tr>
         <tr>
             <td>5 years</td>
         </tr>
-    </tr>
-</table>
+    </table>
 
-<h1>Example of hoverable table</h1>
-<!--add border-button property to all <tr> elements to get the horizontal dividers-->
+    <h1>Example of hoverable table</h1>
+    <!--add border-button property to all <tr> elements to get the horizontal dividers-->
     <table class="chris">
-    <caption> Student list</caption>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>course</th>
-            <th>Duration</th>
-            <th>year of passing out</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Dhiman</td>
-            <td>MCA</td>
-            <td>2 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>chris</td>
-            <td>B-tech</td>
-            <td>4 years</td>
-            <td>2024</td>
-        </tr>
-        <tr>
-            <td>Gunveet</td>
-            <td>BCA</td>
-            <td>3 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>Geet</td>
-            <td>MCA</td>
-            <td>2 years</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>morgan</td>
-            <td>MBA</td>
-            <td>2 years</td>
-            <td>2023</td>
-        </tr>
+        <caption> Student list</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>course</th>
+                <th>Duration</th>
+                <th>year of passing out</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dhiman</td>
+                <td>MCA</td>
+                <td>2 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>chris</td>
+                <td>B-tech</td>
+                <td>4 years</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Gunveet</td>
+                <td>BCA</td>
+                <td>3 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>Geet</td>
+                <td>MCA</td>
+                <td>2 years</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>morgan</td>
+                <td>MBA</td>
+                <td>2 years</td>
+                <td>2023</td>
+            </tr>
         </tbody>
         <tfoot>
-        <tr>
-            <td>Alexzendra</td>
-            <td>Bio-tech</td>
-            <td>4 years</td>
-            <td>2024</td>
-        </tr>
-    </tfoot>
-</table>
-</div>
-
-
+            <tr>
+                <td>Alexzendra</td>
+                <td>Bio-tech</td>
+                <td>4 years</td>
+                <td>2024</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
+
 </html>
